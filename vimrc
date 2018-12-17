@@ -113,7 +113,7 @@ Plugin 'vim-scripts/BOOKMARKS--Mark-and-Highlight-Full-Lines' "bookmark line hig
 Plugin 'majutsushi/tagbar' "taglist
 Plugin 'scrooloose/nerdcommenter' "multi-line comment，'+cc, '+cu delets the comment
 Plugin 'scrooloose/nerdtree' "file browser
-Plugin 'Valloric/YouCompleteMe' "auto complete
+"Plugin 'Valloric/YouCompleteMe' "auto complete
 Plugin 'kien/ctrlp.vim' "ctrl+p search
 Plugin 'vim-scripts/grep.vim' " can use :grep
 Plugin 'Lokaltog/vim-easymotion' "'+f fast jump
