@@ -21,6 +21,8 @@ export PATH
 
 export PROMPT_COMMAND=set_prompt
 
+alias p='podman'
+
 set_prompt() {
 
     local rc=$?
