@@ -22,6 +22,7 @@ export PATH
 export PROMPT_COMMAND=set_prompt
 
 alias p='podman'
+alias g='grep'
 
 set_prompt() {
 
