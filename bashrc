@@ -12,6 +12,10 @@ ospgrep() {
       EXCEPTION|Unknown|[Aa]ssertion|inuse)" $*
 }
 
+doh() {
+	curl -sH 'accept: application/dns-json' "https://dns.google.com/resolve?name=${1}&type=${2}" | python -c 'import sys, json; print(json.load(sys.stdin))["Answer"][0]["data"]' 2>/dev/null || echo "Missing record"
+}
+
 # User specific environment
 PATH="$HOME/.local/bin:$HOME/Bin:$PATH"
 export PATH
