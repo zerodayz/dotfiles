@@ -16,6 +16,10 @@ doh() {
 	curl -sH 'accept: application/dns-json' "https://dns.google.com/resolve?name=${1}&type=${2}" | python -c 'import sys, json; print(json.load(sys.stdin))["Answer"][0]["data"]' 2>/dev/null || echo "Missing record"
 }
 
+abbrev() {
+    a='[0-9a-fA-F]' b=$a$a c=$b$b; sed "s/$b-$c-$c-$c-$c$c$c//g";
+}
+
 # User specific environment
 PATH="$HOME/.local/bin:$HOME/Bin:$PATH"
 export PATH
